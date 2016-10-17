@@ -8,12 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		840BB4F91DA7625600AE0748 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840BB4F81DA7625600AE0748 /* AppDelegate.swift */; };
-		840BB4FB1DA7625600AE0748 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840BB4FA1DA7625600AE0748 /* ViewController.swift */; };
+		840BB4FB1DA7625600AE0748 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840BB4FA1DA7625600AE0748 /* UserInfoViewController.swift */; };
 		840BB4FE1DA7625600AE0748 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840BB4FC1DA7625600AE0748 /* Main.storyboard */; };
 		840BB5001DA7625600AE0748 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 840BB4FF1DA7625600AE0748 /* Assets.xcassets */; };
 		840BB5031DA7625600AE0748 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840BB5011DA7625600AE0748 /* LaunchScreen.storyboard */; };
 		840BB50E1DA7625600AE0748 /* lineLoginSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840BB50D1DA7625600AE0748 /* lineLoginSampleTests.swift */; };
 		840BB5191DA7625600AE0748 /* lineLoginSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840BB5181DA7625600AE0748 /* lineLoginSampleUITests.swift */; };
+		840BB53E1DA7737100AE0748 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840BB53D1DA7737100AE0748 /* LoginViewController.swift */; };
+		840BB5401DA7830F00AE0748 /* LineUserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840BB53F1DA7830F00AE0748 /* LineUserInfo.swift */; };
+		84525DF81DAD4A37005BC9A5 /* LineAdapterUI.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 84525DF71DAD4A37005BC9A5 /* LineAdapterUI.bundle */; };
+		84525DFC1DAD4A54005BC9A5 /* LineAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84525DFB1DAD4A54005BC9A5 /* LineAdapter.framework */; };
+		848DEBA31DA89C7B000061EC /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848DEBA21DA89C7B000061EC /* Manager.swift */; };
+		848DEBA41DA8E9F5000061EC /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840BB52B1DA76A9A00AE0748 /* Security.framework */; };
+		848DEBA51DA8EA00000061EC /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840BB52D1DA76AA800AE0748 /* CoreTelephony.framework */; };
+		848DEBA61DA8EA0C000061EC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840BB52F1DA76AB300AE0748 /* CoreGraphics.framework */; };
+		848DEBA71DA8EA11000061EC /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840BB5311DA76AC100AE0748 /* CoreText.framework */; };
+		848DEBA81DA8EA1B000061EC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840BB5331DA76ACC00AE0748 /* UIKit.framework */; };
+		848DEBA91DA8EA1F000061EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840BB5351DA76AD600AE0748 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +47,7 @@
 /* Begin PBXFileReference section */
 		840BB4F51DA7625600AE0748 /* lineLoginSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lineLoginSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		840BB4F81DA7625600AE0748 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		840BB4FA1DA7625600AE0748 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		840BB4FA1DA7625600AE0748 /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
 		840BB4FD1DA7625600AE0748 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		840BB4FF1DA7625600AE0748 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		840BB5021DA7625600AE0748 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +58,18 @@
 		840BB5141DA7625600AE0748 /* lineLoginSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lineLoginSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		840BB5181DA7625600AE0748 /* lineLoginSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lineLoginSampleUITests.swift; sourceTree = "<group>"; };
 		840BB51A1DA7625600AE0748 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		840BB52B1DA76A9A00AE0748 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		840BB52D1DA76AA800AE0748 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		840BB52F1DA76AB300AE0748 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		840BB5311DA76AC100AE0748 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		840BB5331DA76ACC00AE0748 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		840BB5351DA76AD600AE0748 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		840BB53C1DA76DCF00AE0748 /* LineSDKStarterSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LineSDKStarterSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		840BB53D1DA7737100AE0748 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		840BB53F1DA7830F00AE0748 /* LineUserInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineUserInfo.swift; sourceTree = "<group>"; };
+		84525DF71DAD4A37005BC9A5 /* LineAdapterUI.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LineAdapterUI.bundle; sourceTree = "<group>"; };
+		84525DFB1DAD4A54005BC9A5 /* LineAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LineAdapter.framework; sourceTree = "<group>"; };
+		848DEBA21DA89C7B000061EC /* Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +77,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84525DFC1DAD4A54005BC9A5 /* LineAdapter.framework in Frameworks */,
+				848DEBA91DA8EA1F000061EC /* Foundation.framework in Frameworks */,
+				848DEBA81DA8EA1B000061EC /* UIKit.framework in Frameworks */,
+				848DEBA71DA8EA11000061EC /* CoreText.framework in Frameworks */,
+				848DEBA61DA8EA0C000061EC /* CoreGraphics.framework in Frameworks */,
+				848DEBA51DA8EA00000061EC /* CoreTelephony.framework in Frameworks */,
+				848DEBA41DA8E9F5000061EC /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +111,7 @@
 				840BB50C1DA7625600AE0748 /* lineLoginSampleTests */,
 				840BB5171DA7625600AE0748 /* lineLoginSampleUITests */,
 				840BB4F61DA7625600AE0748 /* Products */,
+				840BB5261DA7642F00AE0748 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +128,17 @@
 		840BB4F71DA7625600AE0748 /* lineLoginSample */ = {
 			isa = PBXGroup;
 			children = (
+				84525DF71DAD4A37005BC9A5 /* LineAdapterUI.bundle */,
 				840BB4F81DA7625600AE0748 /* AppDelegate.swift */,
-				840BB4FA1DA7625600AE0748 /* ViewController.swift */,
+				848DEBA21DA89C7B000061EC /* Manager.swift */,
+				840BB53F1DA7830F00AE0748 /* LineUserInfo.swift */,
+				840BB4FA1DA7625600AE0748 /* UserInfoViewController.swift */,
+				840BB53D1DA7737100AE0748 /* LoginViewController.swift */,
 				840BB4FC1DA7625600AE0748 /* Main.storyboard */,
 				840BB4FF1DA7625600AE0748 /* Assets.xcassets */,
 				840BB5011DA7625600AE0748 /* LaunchScreen.storyboard */,
 				840BB5041DA7625600AE0748 /* Info.plist */,
+				840BB53C1DA76DCF00AE0748 /* LineSDKStarterSwift-Bridging-Header.h */,
 			);
 			path = lineLoginSample;
 			sourceTree = "<group>";
@@ -123,6 +159,20 @@
 				840BB51A1DA7625600AE0748 /* Info.plist */,
 			);
 			path = lineLoginSampleUITests;
+			sourceTree = "<group>";
+		};
+		840BB5261DA7642F00AE0748 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84525DFB1DAD4A54005BC9A5 /* LineAdapter.framework */,
+				840BB5351DA76AD600AE0748 /* Foundation.framework */,
+				840BB5331DA76ACC00AE0748 /* UIKit.framework */,
+				840BB5311DA76AC100AE0748 /* CoreText.framework */,
+				840BB52F1DA76AB300AE0748 /* CoreGraphics.framework */,
+				840BB52D1DA76AA800AE0748 /* CoreTelephony.framework */,
+				840BB52B1DA76A9A00AE0748 /* Security.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +243,7 @@
 				TargetAttributes = {
 					840BB4F41DA7625500AE0748 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = V723YSJ67H;
 						ProvisioningStyle = Automatic;
 					};
 					840BB5081DA7625600AE0748 = {
@@ -235,6 +286,7 @@
 				840BB5031DA7625600AE0748 /* LaunchScreen.storyboard in Resources */,
 				840BB5001DA7625600AE0748 /* Assets.xcassets in Resources */,
 				840BB4FE1DA7625600AE0748 /* Main.storyboard in Resources */,
+				84525DF81DAD4A37005BC9A5 /* LineAdapterUI.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +311,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				840BB4FB1DA7625600AE0748 /* ViewController.swift in Sources */,
+				840BB5401DA7830F00AE0748 /* LineUserInfo.swift in Sources */,
+				840BB53E1DA7737100AE0748 /* LoginViewController.swift in Sources */,
+				840BB4FB1DA7625600AE0748 /* UserInfoViewController.swift in Sources */,
 				840BB4F91DA7625600AE0748 /* AppDelegate.swift in Sources */,
+				848DEBA31DA89C7B000061EC /* Manager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,9 +410,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -399,8 +455,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -412,10 +469,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V723YSJ67H;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/lineLoginSample",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = lineLoginSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.ha1f.lineLoginSample;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = net.ha1f.lineloginsample2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PRODUCT_NAME)/LineSDKStarterSwift-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -424,10 +490,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V723YSJ67H;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/lineLoginSample",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = lineLoginSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.ha1f.lineLoginSample;
+				PRODUCT_BUNDLE_IDENTIFIER = net.ha1f.lineloginsample2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PRODUCT_NAME)/LineSDKStarterSwift-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -505,6 +579,7 @@
 				840BB51F1DA7625600AE0748 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		840BB5201DA7625600AE0748 /* Build configuration list for PBXNativeTarget "lineLoginSampleTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +588,7 @@
 				840BB5221DA7625600AE0748 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		840BB5231DA7625600AE0748 /* Build configuration list for PBXNativeTarget "lineLoginSampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +597,7 @@
 				840BB5251DA7625600AE0748 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
